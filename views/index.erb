@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <th>
+      Number
+    </th>
+    <th>
+      Time table
+    </th>
+  </thead>
+  <tbody>
+    <% @timestables.each do |timestable| %>
+      <tr class="timestable_<%= timestable.keys.first %>">
+        <td class="prime"><%= timestable.keys.first %></td>
+        <td class="timestable"><%= timestable.values.first %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
