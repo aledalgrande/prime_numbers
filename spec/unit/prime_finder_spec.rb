@@ -2,6 +2,10 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe PrimeFinder do
   
+  it "should generate the first 20 naturals" do
+    PrimeFinder.first_n_naturals(20).should eql([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
+  end
+  
   it "should start from 2" do
     PrimeFinder.find(2,2).should eql([2])
   end
